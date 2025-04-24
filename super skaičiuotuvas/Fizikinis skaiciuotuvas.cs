@@ -49,7 +49,7 @@ namespace super_skaičiuotuvas
             double a = Convert.ToDouble(txtNum1.Text);
             double b = Convert.ToDouble(txtNum2.Text);
             double c = Convert.ToDouble(txtNum3.Text);
-            double d = Convert.ToDouble(txtNum4.Text);
+            double d = Convert.ToDouble(txtNum4.Text); 
             if (rdbV.Checked)
             {
                 if (x == 1)
@@ -235,7 +235,6 @@ namespace super_skaičiuotuvas
                 rb2.Text = "v ir ƒ";
                 rb3.Text = "c ir ƒ";
                 c();
-                cc();
             }
         }
 
@@ -248,7 +247,6 @@ namespace super_skaičiuotuvas
                 rb3.Text = "l ir g";
                 rb4.Text = "m ir k";
                 d();
-                dd();
             }
         }
 
@@ -259,7 +257,6 @@ namespace super_skaičiuotuvas
                 rb1.Text = "A ir t";
                 rb2.Text = "U ir I";
                 b();
-                bb();
             }
         }
 
@@ -526,34 +523,39 @@ namespace super_skaičiuotuvas
                 rb3.Text = "L ir m";
                 rb4.Text = "q ir m";
                 d();
-                dd();
             }
         }
 
         private void rdbf_CheckedChanged(object sender, EventArgs e)
         {
-            rb1.Text = "T";
-            rb2.Text = "λ ir v";
-            rb3.Text = "λ ir c";
-            c();
-            cc();
+            if (rdbf.Checked)
+            {
+                rb1.Text = "T";
+                rb2.Text = "λ ir v";
+                rb3.Text = "λ ir c";
+                c();
+            }
         }
 
         private void rdbP_CheckedChanged(object sender, EventArgs e)
         {
-            rb1.Text = "ρ, g ir h";
-            rb2.Text = "F ir S";
-            b();
-            bb();
+            if (rdbP.Checked)
+            {
+                rb1.Text = "ρ, g ir h";
+                rb2.Text = "F ir S";
+                b();
+            }
         }
 
         private void rdbFs_CheckedChanged(object sender, EventArgs e)
         {
-            lbl1.Text = "m(kg)";
-            lbl2.Text = "g(m/s²)";
-            a();
-            aa();
-            B();
+            if (rdbFs.Checked)
+            {
+                lbl1.Text = "m(kg)";
+                lbl2.Text = "g(m/s²)";
+                a();
+                B();
+            }
 
         }
 
@@ -564,7 +566,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "v(m/s)";
                 lbl2.Text = "m(kg)";
                 a();
-                aa();
                 B();
             }
         }
@@ -578,7 +579,6 @@ namespace super_skaičiuotuvas
                 rb2.Text = "F, ρ(skysčio) ir g";
                 rb3.Text = "n ir N";
                 c();
-                cc();
             }
         }
 
@@ -593,7 +593,6 @@ namespace super_skaičiuotuvas
                 rb4.Text = "Ep, g, h";
                 rb5.Text = "Ek ir v";
                 E();
-                ee();
             }
         }
 
@@ -607,7 +606,6 @@ namespace super_skaičiuotuvas
                 rb3.Text = "F, s, cos 𝜃"; //darbas
                 rb4.Text = "U, I, t"; //elektros darbas
                 d();
-                dd();
             }
         }
 
@@ -619,7 +617,6 @@ namespace super_skaičiuotuvas
                 lbl2.Text = "g(m/s²)";
                 lbl3.Text = "h(m)";
                 a();
-                aa();
                 C();
             }
         }
@@ -631,7 +628,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "F(N)";
                 lbl2.Text = "l(m)";
                 a();
-                aa();
                 B();
             }
         }
@@ -643,7 +639,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "x(m)";
                 lbl2.Text = "K(N/m)";
                 a();
-                aa();
                 B();
             }
         }
@@ -655,7 +650,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "r(m)";
                 lbl2.Text = "t(s)";
                 a();
-                aa();
                 B();
             }
         }
@@ -667,7 +661,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "Naudingas darbas";
                 lbl2.Text = "Visas darbas";
                 a();
-                aa();
                 B();
             }
         }
@@ -680,7 +673,6 @@ namespace super_skaičiuotuvas
                 lbl2.Text = "v0(m/s)";
                 lbl3.Text = "t(s)";
                 a();
-                aa();
                 C();
             }
         }
@@ -692,7 +684,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "m(kg)";
                 lbl2.Text = "V(m³)";
                 a();
-                aa();
                 B();
             }
         }
@@ -704,17 +695,18 @@ namespace super_skaičiuotuvas
                 rb1.Text = "ρ(skysčio), V ir g";
                 rb2.Text = "F(ore) ir F(skystyje)";
                 b();
-                bb();
             }
         }
 
         private void rdbФ_CheckedChanged(object sender, EventArgs e)
         {
-            lbl1.Text = "P";
-            lbl2.Text = "P0";
-            a();
-            aa();
-            B();
+            if (rdbФ.Checked)
+            {
+                lbl1.Text = "P";
+                lbl2.Text = "P0";
+                a();
+                B();
+            }
         }
 
         private void tsbChoose_Click(object sender, EventArgs e)
@@ -725,6 +717,7 @@ namespace super_skaičiuotuvas
         }
         private void b()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = false;
@@ -736,6 +729,7 @@ namespace super_skaičiuotuvas
         }
         private void c()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = true;
@@ -747,6 +741,7 @@ namespace super_skaičiuotuvas
         }
         private void d()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = true;
@@ -758,6 +753,7 @@ namespace super_skaičiuotuvas
         }
         private void E()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = true;
@@ -769,6 +765,7 @@ namespace super_skaičiuotuvas
         }
         private void f()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = true;
@@ -780,6 +777,7 @@ namespace super_skaičiuotuvas
         }
         private void g()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = true;
@@ -791,6 +789,7 @@ namespace super_skaičiuotuvas
         }
         private void a()
         {
+            groupBox2.Visible = false;
             rb1.Visible = false;
             rb2.Visible = false;
             rb3.Visible = false;
@@ -802,6 +801,7 @@ namespace super_skaičiuotuvas
         }
         private void h()
         {
+            groupBox2.Visible = true;
             rb1.Visible = true;
             rb2.Visible = true;
             rb3.Visible = true;
@@ -856,86 +856,6 @@ namespace super_skaičiuotuvas
             double a = Convert.ToDouble(txtNum1.Text);
             double b = Convert.ToDouble(txtNum2.Text);
             lblCalculator.Text = (a / b).ToString();
-        }
-        private void aa() {
-            groupBox2.Visible = false;
-        }
-        private void bb()
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = false;
-            rb4.Visible = false;
-            rb5.Visible = false;
-            rb6.Visible = false;
-            rb7.Visible = false;
-            rb8.Visible = false;
-        }
-        private void cc()
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = true;
-            rb4.Visible = false;
-            rb5.Visible = false;
-            rb6.Visible = false;
-            rb7.Visible = false;
-            rb8.Visible = false;
-        }
-        private void dd()
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = true;
-            rb4.Visible = true;
-            rb5.Visible = false;
-            rb6.Visible = false;
-            rb7.Visible = false;
-            rb8.Visible = false;
-        }
-        private void ee() 
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = true;
-            rb4.Visible = true;
-            rb5.Visible = true;
-            rb6.Visible = false;
-            rb7.Visible = false;
-            rb8.Visible = false;
-        }
-        private void ff()
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = true;
-            rb4.Visible = true;
-            rb5.Visible = true;
-            rb6.Visible = true;
-            rb7.Visible = false;
-            rb8.Visible = false;
-        }
-        private void gg()
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = true;
-            rb4.Visible = true;
-            rb5.Visible = true;
-            rb6.Visible = true;
-            rb7.Visible = true;
-            rb8.Visible = false;
-        }
-        private void hh()
-        {
-            rb1.Visible = true;
-            rb2.Visible = true;
-            rb3.Visible = true;
-            rb4.Visible = true;
-            rb5.Visible = true;
-            rb6.Visible = true;
-            rb7.Visible = true;
-            rb8.Visible = true;
         }
         private void A()
         {

@@ -69,14 +69,12 @@
             this.rb2 = new System.Windows.Forms.RadioButton();
             this.rb3 = new System.Windows.Forms.RadioButton();
             this.Konstantos = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl4 = new System.Windows.Forms.Label();
             this.txtNum4 = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbChoose = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -463,7 +461,7 @@
             this.groupBox2.Size = new System.Drawing.Size(173, 300);
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ką turi";
+            this.groupBox2.Text = "Formulė";
             this.groupBox2.Visible = false;
             // 
             // rb8
@@ -565,15 +563,6 @@
             this.Konstantos.UseVisualStyleBackColor = true;
             this.Konstantos.Click += new System.EventHandler(this.Konstantos_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(105, 325);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // lbl4
             // 
             this.lbl4.AutoSize = true;
@@ -619,7 +608,6 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.txtNum4);
             this.Controls.Add(this.lbl4);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Konstantos);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -639,7 +627,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -667,7 +654,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button Konstantos;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton rb8;
         private System.Windows.Forms.RadioButton rb7;
         private System.Windows.Forms.RadioButton rb6;

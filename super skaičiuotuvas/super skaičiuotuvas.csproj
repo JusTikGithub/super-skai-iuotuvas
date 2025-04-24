@@ -58,6 +58,7 @@
     <Compile Include="Konstantos.Designer.cs">
       <DependentUpon>Konstantos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Memory.cs" />
     <Compile Include="Paprastas skaičiuotuvas.cs">
       <SubType>Form</SubType>
     </Compile>

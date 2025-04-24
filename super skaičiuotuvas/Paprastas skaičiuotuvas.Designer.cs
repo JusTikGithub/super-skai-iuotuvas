@@ -51,6 +51,7 @@
             this.btnEquals = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbChoose = new System.Windows.Forms.ToolStripButton();
+            this.lblEquation = new System.Windows.Forms.Label();
             this.grpboxAritmetika.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -114,10 +115,10 @@
             this.rdbAdd.AutoSize = true;
             this.rdbAdd.Location = new System.Drawing.Point(6, 19);
             this.rdbAdd.Name = "rdbAdd";
-            this.rdbAdd.Size = new System.Drawing.Size(60, 17);
+            this.rdbAdd.Size = new System.Drawing.Size(49, 17);
             this.rdbAdd.TabIndex = 5;
             this.rdbAdd.TabStop = true;
-            this.rdbAdd.Text = "Sudėtis";
+            this.rdbAdd.Text = "a + b";
             this.rdbAdd.UseVisualStyleBackColor = true;
             this.rdbAdd.CheckedChanged += new System.EventHandler(this.rdbAdd_CheckedChanged);
             // 
@@ -218,10 +219,10 @@
             this.rdbMultiply.AutoSize = true;
             this.rdbMultiply.Location = new System.Drawing.Point(6, 42);
             this.rdbMultiply.Name = "rdbMultiply";
-            this.rdbMultiply.Size = new System.Drawing.Size(68, 17);
+            this.rdbMultiply.Size = new System.Drawing.Size(47, 17);
             this.rdbMultiply.TabIndex = 8;
             this.rdbMultiply.TabStop = true;
-            this.rdbMultiply.Text = "Daugyba";
+            this.rdbMultiply.Text = "a * b";
             this.rdbMultiply.UseVisualStyleBackColor = true;
             this.rdbMultiply.CheckedChanged += new System.EventHandler(this.rdbMultiply_CheckedChanged);
             // 
@@ -230,10 +231,10 @@
             this.rdbMinus.AutoSize = true;
             this.rdbMinus.Location = new System.Drawing.Point(97, 19);
             this.rdbMinus.Name = "rdbMinus";
-            this.rdbMinus.Size = new System.Drawing.Size(55, 17);
+            this.rdbMinus.Size = new System.Drawing.Size(46, 17);
             this.rdbMinus.TabIndex = 6;
             this.rdbMinus.TabStop = true;
-            this.rdbMinus.Text = "Atimtis";
+            this.rdbMinus.Text = "a - b";
             this.rdbMinus.UseVisualStyleBackColor = true;
             this.rdbMinus.CheckedChanged += new System.EventHandler(this.rdbMinus_CheckedChanged);
             // 
@@ -266,10 +267,10 @@
             this.rdbDivide.AutoSize = true;
             this.rdbDivide.Location = new System.Drawing.Point(97, 40);
             this.rdbDivide.Name = "rdbDivide";
-            this.rdbDivide.Size = new System.Drawing.Size(58, 17);
+            this.rdbDivide.Size = new System.Drawing.Size(48, 17);
             this.rdbDivide.TabIndex = 7;
             this.rdbDivide.TabStop = true;
-            this.rdbDivide.Text = "Dalyba";
+            this.rdbDivide.Text = "a / b";
             this.rdbDivide.UseVisualStyleBackColor = true;
             this.rdbDivide.CheckedChanged += new System.EventHandler(this.rdbDivide_CheckedChanged);
             // 
@@ -323,11 +324,20 @@
             this.tsbChoose.Text = "Kitokie skaiciuotuvai";
             this.tsbChoose.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
+            // lblEquation
+            // 
+            this.lblEquation.Location = new System.Drawing.Point(24, 47);
+            this.lblEquation.Name = "lblEquation";
+            this.lblEquation.Size = new System.Drawing.Size(476, 62);
+            this.lblEquation.TabIndex = 12;
+            this.lblEquation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 549);
+            this.Controls.Add(this.lblEquation);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnClear);
@@ -375,6 +385,7 @@
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbChoose;
+        private System.Windows.Forms.Label lblEquation;
     }
 }
 

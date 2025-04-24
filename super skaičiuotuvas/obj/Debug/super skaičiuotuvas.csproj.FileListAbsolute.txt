@@ -28,3 +28,19 @@ C:\Users\jus7a\Downloads\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\sup
 C:\Users\jus7a\Downloads\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.pdb
 C:\Users\jus7a\Downloads\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Plotai.resources
 C:\Users\jus7a\Downloads\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Tūriai.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\bin\Debug\super skaičiuotuvas.exe.config
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\bin\Debug\super skaičiuotuvas.exe
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\bin\Debug\super skaičiuotuvas.pdb
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.csproj.AssemblyReference.cache
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.csproj.SuggestedBindingRedirects.cache
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Fizikinis_skaiciuotuvas.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Konstantos.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Form1.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Form2.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Plotai.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Properties.Resources.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Tūriai.resources
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.csproj.GenerateResource.cache
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.csproj.CoreCompileInputs.cache
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.exe
+C:\Users\jus7a\Documents\GitHub\super skaičiuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.pdb

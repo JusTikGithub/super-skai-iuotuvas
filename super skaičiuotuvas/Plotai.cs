@@ -60,7 +60,38 @@ namespace super_skaičiuotuvas
             {
                 lblCalculator.Text = (Math.Pow(a, 2) * Math.PI).ToString();
             }
-
+            else if (rbTrapezoid.Checked)
+            {
+                lblCalculator.Text = ((a + b) / 2 * c).ToString();
+            }
+            else if (rbOval.Checked)
+            {
+                lblCalculator.Text = (a * b * Math.PI).ToString();
+            }
+            else if (rbCube.Checked)
+            {
+                lblCalculator.Text = (6 * Math.Pow(a, 2)).ToString();
+            }
+            else if (rb3Pyramid.Checked)
+            {
+                lblCalculator.Text = (0.5 * (a * b + 1.5 * (a + c + d) * E)).ToString(); //Padaryk pasirinkimus kai lygiašonė, lygiakraštė ar betkokia
+            }
+            else if (rbRectPrism.Checked)
+            {
+                lblCalculator.Text = (a * b * 2 + a * c * 2 + b * c * 2).ToString();
+            }
+            else if (rbCylinder.Checked)
+            {
+                lblCalculator.Text = (2 * Math.PI * a * b + 2 * Math.PI * Math.Pow(a, 2)).ToString();
+            }
+            else if (rbCone.Checked)
+            {
+                lblCalculator.Text = (Math.PI * a * (a + Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2)))).ToString();
+            }
+            else if (rbPrism.Checked)
+            {
+                lblCalculator.Text = (2 * a + b * c).ToString();
+            }
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -117,7 +148,7 @@ namespace super_skaičiuotuvas
             if (rbLygiagretainis.Checked)
             {
                 x = 1;
-                lbl1.Text = "aukštis";
+                lbl1.Text = "aukštinė";
                 lbl2.Text = "pagrindo ilgis";
                 b();
             }
@@ -238,7 +269,7 @@ namespace super_skaičiuotuvas
             lbl5.Visible = false;
             lbl6.Visible = false;
         }
-        private void e()
+        private void E()
         {
             txtNum1.Visible = true;
             txtNum2.Visible = true;
@@ -267,6 +298,91 @@ namespace super_skaičiuotuvas
             lbl4.Visible = true;
             lbl5.Visible = true;
             lbl6.Visible = true;
+        }
+
+        private void rbTrapezoid_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbTrapezoid.Checked)
+            {
+                c();
+                lbl1.Text = "pirmo pagrindo ilgis";
+                lbl2.Text = "antro pagrindo ilgis";
+                lbl3.Text = "aukštinės ilgis";
+            }
+        }
+
+        private void rbOval_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbOval.Checked)
+            {
+                b();
+                lbl1.Text = "pirmos pusašies ilgis";
+                lbl2.Text = "antros pusašies ilgis";
+            }
+        }
+
+        private void rbCube_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCube.Checked)
+            {
+                a();
+                lbl1.Text = "Kraštinės ilgis";
+            }
+        }
+
+        private void rb3Pyramid_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rb3Pyramid.Checked)
+            {
+                E();
+                lbl1.Text = "pagrindo pirmos kraštinės ilgis";
+                lbl2.Text = "aukštinės, nubrėžtos į tą kraštinę ilgis";
+                lbl3.Text = "pagrindo antros kraštinės ilgis";
+                lbl4.Text = "pagrindo trečios kraštinės ilgis";
+                lbl5.Text = "piramidės aukštis";
+            }
+        }
+
+        private void rbRectPrism_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRectPrism.Checked)
+            {
+                c();
+                lbl1.Text = "ilgis";
+                lbl3.Text = "aukštis";
+                lbl2.Text = "plotis";
+            }
+        }
+
+        private void rbCylinder_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCylinder.Checked)
+            {
+                b();
+                lbl1.Text = "pagrindo spindulio ilgis";
+                lbl2.Text = "Aukštis";
+            }
+        }
+
+        private void rbCone_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCone.Checked)
+            {
+                b();
+                lbl1.Text = "Pagrindo spindulio ilgis";
+                lbl2.Text = "aukštis";
+            }
+        }
+
+        private void rbPrism_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPrism.Checked)
+            {
+                c();
+                lbl1.Text = "pagrindo plotas";
+                lbl2.Text = "pagrindo perimetras";
+                lbl3.Text = "aukštis";
+            }
         }
     }
 }

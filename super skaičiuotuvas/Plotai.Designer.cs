@@ -37,6 +37,8 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.lblCalculator = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbOval = new System.Windows.Forms.RadioButton();
+            this.rbTrapezoid = new System.Windows.Forms.RadioButton();
             this.rbCircle = new System.Windows.Forms.RadioButton();
             this.rbRectangle = new System.Windows.Forms.RadioButton();
             this.rbKeturkampis = new System.Windows.Forms.RadioButton();
@@ -56,8 +58,16 @@
             this.txtNum5 = new System.Windows.Forms.TextBox();
             this.lbl6 = new System.Windows.Forms.Label();
             this.txtNum6 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbPrism = new System.Windows.Forms.RadioButton();
+            this.rbCone = new System.Windows.Forms.RadioButton();
+            this.rbCylinder = new System.Windows.Forms.RadioButton();
+            this.rbRectPrism = new System.Windows.Forms.RadioButton();
+            this.rb3Pyramid = new System.Windows.Forms.RadioButton();
+            this.rbCube = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEquals
@@ -137,13 +147,15 @@
             this.lblCalculator.Location = new System.Drawing.Point(12, 9);
             this.lblCalculator.MinimumSize = new System.Drawing.Size(454, 82);
             this.lblCalculator.Name = "lblCalculator";
-            this.lblCalculator.Size = new System.Drawing.Size(631, 128);
+            this.lblCalculator.Size = new System.Drawing.Size(797, 128);
             this.lblCalculator.TabIndex = 10;
             this.lblCalculator.Text = "0";
             this.lblCalculator.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rbOval);
+            this.groupBox1.Controls.Add(this.rbTrapezoid);
             this.groupBox1.Controls.Add(this.rbCircle);
             this.groupBox1.Controls.Add(this.rbRectangle);
             this.groupBox1.Controls.Add(this.rbKeturkampis);
@@ -155,12 +167,36 @@
             this.groupBox1.Size = new System.Drawing.Size(166, 219);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Figūros";
+            this.groupBox1.Text = "2D Figūros";
+            // 
+            // rbOval
+            // 
+            this.rbOval.AutoSize = true;
+            this.rbOval.Location = new System.Drawing.Point(16, 186);
+            this.rbOval.Name = "rbOval";
+            this.rbOval.Size = new System.Drawing.Size(112, 17);
+            this.rbOval.TabIndex = 7;
+            this.rbOval.TabStop = true;
+            this.rbOval.Text = "Ovalas arba elipsė";
+            this.rbOval.UseVisualStyleBackColor = true;
+            this.rbOval.CheckedChanged += new System.EventHandler(this.rbOval_CheckedChanged);
+            // 
+            // rbTrapezoid
+            // 
+            this.rbTrapezoid.AutoSize = true;
+            this.rbTrapezoid.Location = new System.Drawing.Point(16, 163);
+            this.rbTrapezoid.Name = "rbTrapezoid";
+            this.rbTrapezoid.Size = new System.Drawing.Size(69, 17);
+            this.rbTrapezoid.TabIndex = 6;
+            this.rbTrapezoid.TabStop = true;
+            this.rbTrapezoid.Text = "Trapecija";
+            this.rbTrapezoid.UseVisualStyleBackColor = true;
+            this.rbTrapezoid.CheckedChanged += new System.EventHandler(this.rbTrapezoid_CheckedChanged);
             // 
             // rbCircle
             // 
             this.rbCircle.AutoSize = true;
-            this.rbCircle.Location = new System.Drawing.Point(46, 140);
+            this.rbCircle.Location = new System.Drawing.Point(16, 140);
             this.rbCircle.Name = "rbCircle";
             this.rbCircle.Size = new System.Drawing.Size(78, 17);
             this.rbCircle.TabIndex = 5;
@@ -172,7 +208,7 @@
             // rbRectangle
             // 
             this.rbRectangle.AutoSize = true;
-            this.rbRectangle.Location = new System.Drawing.Point(46, 117);
+            this.rbRectangle.Location = new System.Drawing.Point(16, 117);
             this.rbRectangle.Name = "rbRectangle";
             this.rbRectangle.Size = new System.Drawing.Size(88, 17);
             this.rbRectangle.TabIndex = 4;
@@ -184,7 +220,7 @@
             // rbKeturkampis
             // 
             this.rbKeturkampis.AutoSize = true;
-            this.rbKeturkampis.Location = new System.Drawing.Point(46, 94);
+            this.rbKeturkampis.Location = new System.Drawing.Point(16, 94);
             this.rbKeturkampis.Name = "rbKeturkampis";
             this.rbKeturkampis.Size = new System.Drawing.Size(83, 17);
             this.rbKeturkampis.TabIndex = 3;
@@ -196,7 +232,7 @@
             // rbLygiagretainis
             // 
             this.rbLygiagretainis.AutoSize = true;
-            this.rbLygiagretainis.Location = new System.Drawing.Point(46, 71);
+            this.rbLygiagretainis.Location = new System.Drawing.Point(16, 71);
             this.rbLygiagretainis.Name = "rbLygiagretainis";
             this.rbLygiagretainis.Size = new System.Drawing.Size(89, 17);
             this.rbLygiagretainis.TabIndex = 2;
@@ -208,7 +244,7 @@
             // rbTriangle
             // 
             this.rbTriangle.AutoSize = true;
-            this.rbTriangle.Location = new System.Drawing.Point(46, 48);
+            this.rbTriangle.Location = new System.Drawing.Point(16, 48);
             this.rbTriangle.Name = "rbTriangle";
             this.rbTriangle.Size = new System.Drawing.Size(70, 17);
             this.rbTriangle.TabIndex = 1;
@@ -220,7 +256,7 @@
             // rbSquare
             // 
             this.rbSquare.AutoSize = true;
-            this.rbSquare.Location = new System.Drawing.Point(46, 25);
+            this.rbSquare.Location = new System.Drawing.Point(16, 25);
             this.rbSquare.Name = "rbSquare";
             this.rbSquare.Size = new System.Drawing.Size(73, 17);
             this.rbSquare.TabIndex = 0;
@@ -283,7 +319,7 @@
             this.tsbChoose});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(659, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(825, 25);
             this.toolStrip1.TabIndex = 48;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -350,11 +386,99 @@
             this.txtNum6.Text = "0";
             this.txtNum6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rbPrism);
+            this.groupBox2.Controls.Add(this.rbCone);
+            this.groupBox2.Controls.Add(this.rbCylinder);
+            this.groupBox2.Controls.Add(this.rbRectPrism);
+            this.groupBox2.Controls.Add(this.rb3Pyramid);
+            this.groupBox2.Controls.Add(this.rbCube);
+            this.groupBox2.Location = new System.Drawing.Point(647, 150);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(166, 219);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "3D Figūros";
+            // 
+            // rbPrism
+            // 
+            this.rbPrism.AutoSize = true;
+            this.rbPrism.Location = new System.Drawing.Point(15, 140);
+            this.rbPrism.Name = "rbPrism";
+            this.rbPrism.Size = new System.Drawing.Size(56, 17);
+            this.rbPrism.TabIndex = 5;
+            this.rbPrism.TabStop = true;
+            this.rbPrism.Text = "Prizmė";
+            this.rbPrism.UseVisualStyleBackColor = true;
+            this.rbPrism.CheckedChanged += new System.EventHandler(this.rbPrism_CheckedChanged);
+            // 
+            // rbCone
+            // 
+            this.rbCone.AutoSize = true;
+            this.rbCone.Location = new System.Drawing.Point(15, 117);
+            this.rbCone.Name = "rbCone";
+            this.rbCone.Size = new System.Drawing.Size(51, 17);
+            this.rbCone.TabIndex = 4;
+            this.rbCone.TabStop = true;
+            this.rbCone.Text = "Kūgis";
+            this.rbCone.UseVisualStyleBackColor = true;
+            this.rbCone.CheckedChanged += new System.EventHandler(this.rbCone_CheckedChanged);
+            // 
+            // rbCylinder
+            // 
+            this.rbCylinder.AutoSize = true;
+            this.rbCylinder.Location = new System.Drawing.Point(15, 94);
+            this.rbCylinder.Name = "rbCylinder";
+            this.rbCylinder.Size = new System.Drawing.Size(56, 17);
+            this.rbCylinder.TabIndex = 3;
+            this.rbCylinder.TabStop = true;
+            this.rbCylinder.Text = "Ritinys";
+            this.rbCylinder.UseVisualStyleBackColor = true;
+            this.rbCylinder.CheckedChanged += new System.EventHandler(this.rbCylinder_CheckedChanged);
+            // 
+            // rbRectPrism
+            // 
+            this.rbRectPrism.AutoSize = true;
+            this.rbRectPrism.Location = new System.Drawing.Point(15, 71);
+            this.rbRectPrism.Name = "rbRectPrism";
+            this.rbRectPrism.Size = new System.Drawing.Size(141, 17);
+            this.rbRectPrism.TabIndex = 2;
+            this.rbRectPrism.TabStop = true;
+            this.rbRectPrism.Text = "Stačiakampis gretasienis";
+            this.rbRectPrism.UseVisualStyleBackColor = true;
+            this.rbRectPrism.CheckedChanged += new System.EventHandler(this.rbRectPrism_CheckedChanged);
+            // 
+            // rb3Pyramid
+            // 
+            this.rb3Pyramid.AutoSize = true;
+            this.rb3Pyramid.Location = new System.Drawing.Point(15, 48);
+            this.rb3Pyramid.Name = "rb3Pyramid";
+            this.rb3Pyramid.Size = new System.Drawing.Size(111, 17);
+            this.rb3Pyramid.TabIndex = 1;
+            this.rb3Pyramid.TabStop = true;
+            this.rb3Pyramid.Text = "Trikampė piramidė";
+            this.rb3Pyramid.UseVisualStyleBackColor = true;
+            this.rb3Pyramid.CheckedChanged += new System.EventHandler(this.rb3Pyramid_CheckedChanged);
+            // 
+            // rbCube
+            // 
+            this.rbCube.AutoSize = true;
+            this.rbCube.Location = new System.Drawing.Point(15, 25);
+            this.rbCube.Name = "rbCube";
+            this.rbCube.Size = new System.Drawing.Size(55, 17);
+            this.rbCube.TabIndex = 0;
+            this.rbCube.TabStop = true;
+            this.rbCube.Text = "Kubas";
+            this.rbCube.UseVisualStyleBackColor = true;
+            this.rbCube.CheckedChanged += new System.EventHandler(this.rbCube_CheckedChanged);
+            // 
             // Plotai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 446);
+            this.ClientSize = new System.Drawing.Size(825, 446);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lbl6);
             this.Controls.Add(this.txtNum6);
             this.Controls.Add(this.lbl5);
@@ -382,6 +506,8 @@
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +543,14 @@
         private System.Windows.Forms.TextBox txtNum5;
         private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.TextBox txtNum6;
+        private System.Windows.Forms.RadioButton rbTrapezoid;
+        private System.Windows.Forms.RadioButton rbOval;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rbPrism;
+        private System.Windows.Forms.RadioButton rbCone;
+        private System.Windows.Forms.RadioButton rbCylinder;
+        private System.Windows.Forms.RadioButton rbRectPrism;
+        private System.Windows.Forms.RadioButton rb3Pyramid;
+        private System.Windows.Forms.RadioButton rbCube;
     }
 }
