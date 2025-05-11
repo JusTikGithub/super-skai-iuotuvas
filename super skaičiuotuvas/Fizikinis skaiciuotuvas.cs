@@ -901,5 +901,28 @@ namespace super_skaičiuotuvas
             txtNum3.Visible = true;
             txtNum4.Visible = true;
         }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb1.SelectedIndex == 0)
+            {
+                lbl1.Text = "aaaa";
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

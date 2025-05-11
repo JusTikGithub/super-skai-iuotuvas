@@ -63,8 +63,9 @@
             this.rbCone = new System.Windows.Forms.RadioButton();
             this.rbCylinder = new System.Windows.Forms.RadioButton();
             this.rbRectPrism = new System.Windows.Forms.RadioButton();
-            this.rb3Pyramid = new System.Windows.Forms.RadioButton();
             this.rbCube = new System.Windows.Forms.RadioButton();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -147,7 +148,7 @@
             this.lblCalculator.Location = new System.Drawing.Point(12, 9);
             this.lblCalculator.MinimumSize = new System.Drawing.Size(454, 82);
             this.lblCalculator.Name = "lblCalculator";
-            this.lblCalculator.Size = new System.Drawing.Size(797, 128);
+            this.lblCalculator.Size = new System.Drawing.Size(870, 128);
             this.lblCalculator.TabIndex = 10;
             this.lblCalculator.Text = "0";
             this.lblCalculator.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -162,7 +163,7 @@
             this.groupBox1.Controls.Add(this.rbLygiagretainis);
             this.groupBox1.Controls.Add(this.rbTriangle);
             this.groupBox1.Controls.Add(this.rbSquare);
-            this.groupBox1.Location = new System.Drawing.Point(468, 150);
+            this.groupBox1.Location = new System.Drawing.Point(537, 147);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(166, 219);
             this.groupBox1.TabIndex = 18;
@@ -267,7 +268,7 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(107, 334);
+            this.btn1.Location = new System.Drawing.Point(30, 317);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(90, 60);
             this.btn1.TabIndex = 19;
@@ -277,7 +278,7 @@
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(203, 334);
+            this.btn2.Location = new System.Drawing.Point(126, 317);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(90, 60);
             this.btn2.TabIndex = 20;
@@ -287,7 +288,7 @@
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(299, 334);
+            this.btn3.Location = new System.Drawing.Point(222, 317);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(90, 60);
             this.btn3.TabIndex = 21;
@@ -319,7 +320,7 @@
             this.tsbChoose});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(825, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(898, 25);
             this.toolStrip1.TabIndex = 48;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -392,9 +393,8 @@
             this.groupBox2.Controls.Add(this.rbCone);
             this.groupBox2.Controls.Add(this.rbCylinder);
             this.groupBox2.Controls.Add(this.rbRectPrism);
-            this.groupBox2.Controls.Add(this.rb3Pyramid);
             this.groupBox2.Controls.Add(this.rbCube);
-            this.groupBox2.Location = new System.Drawing.Point(647, 150);
+            this.groupBox2.Location = new System.Drawing.Point(716, 147);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(166, 219);
             this.groupBox2.TabIndex = 19;
@@ -404,7 +404,7 @@
             // rbPrism
             // 
             this.rbPrism.AutoSize = true;
-            this.rbPrism.Location = new System.Drawing.Point(15, 140);
+            this.rbPrism.Location = new System.Drawing.Point(15, 48);
             this.rbPrism.Name = "rbPrism";
             this.rbPrism.Size = new System.Drawing.Size(56, 17);
             this.rbPrism.TabIndex = 5;
@@ -449,18 +449,6 @@
             this.rbRectPrism.UseVisualStyleBackColor = true;
             this.rbRectPrism.CheckedChanged += new System.EventHandler(this.rbRectPrism_CheckedChanged);
             // 
-            // rb3Pyramid
-            // 
-            this.rb3Pyramid.AutoSize = true;
-            this.rb3Pyramid.Location = new System.Drawing.Point(15, 48);
-            this.rb3Pyramid.Name = "rb3Pyramid";
-            this.rb3Pyramid.Size = new System.Drawing.Size(111, 17);
-            this.rb3Pyramid.TabIndex = 1;
-            this.rb3Pyramid.TabStop = true;
-            this.rb3Pyramid.Text = "Trikampė piramidė";
-            this.rb3Pyramid.UseVisualStyleBackColor = true;
-            this.rb3Pyramid.CheckedChanged += new System.EventHandler(this.rb3Pyramid_CheckedChanged);
-            // 
             // rbCube
             // 
             this.rbCube.AutoSize = true;
@@ -473,11 +461,33 @@
             this.rbCube.UseVisualStyleBackColor = true;
             this.rbCube.CheckedChanged += new System.EventHandler(this.rbCube_CheckedChanged);
             // 
+            // btn4
+            // 
+            this.btn4.Location = new System.Drawing.Point(318, 317);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(90, 60);
+            this.btn4.TabIndex = 55;
+            this.btn4.Text = "button4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            // 
+            // btn5
+            // 
+            this.btn5.Location = new System.Drawing.Point(414, 317);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(90, 60);
+            this.btn5.TabIndex = 56;
+            this.btn5.Text = "button5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            // 
             // Plotai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 446);
+            this.ClientSize = new System.Drawing.Size(898, 446);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.btn4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lbl6);
             this.Controls.Add(this.txtNum6);
@@ -550,7 +560,8 @@
         private System.Windows.Forms.RadioButton rbCone;
         private System.Windows.Forms.RadioButton rbCylinder;
         private System.Windows.Forms.RadioButton rbRectPrism;
-        private System.Windows.Forms.RadioButton rb3Pyramid;
         private System.Windows.Forms.RadioButton rbCube;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn5;
     }
 }

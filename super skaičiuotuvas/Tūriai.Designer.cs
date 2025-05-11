@@ -47,13 +47,13 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.lblCalculator = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbRectangle = new System.Windows.Forms.RadioButton();
             this.rbPrism = new System.Windows.Forms.RadioButton();
             this.rbCylinder = new System.Windows.Forms.RadioButton();
             this.rbCone = new System.Windows.Forms.RadioButton();
             this.rbSphere = new System.Windows.Forms.RadioButton();
             this.rbPiramid = new System.Windows.Forms.RadioButton();
             this.rbCube = new System.Windows.Forms.RadioButton();
-            this.rbRectangle = new System.Windows.Forms.RadioButton();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -247,6 +247,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Figūros";
             // 
+            // rbRectangle
+            // 
+            this.rbRectangle.AutoSize = true;
+            this.rbRectangle.Location = new System.Drawing.Point(18, 50);
+            this.rbRectangle.Name = "rbRectangle";
+            this.rbRectangle.Size = new System.Drawing.Size(141, 17);
+            this.rbRectangle.TabIndex = 6;
+            this.rbRectangle.TabStop = true;
+            this.rbRectangle.Text = "Stačiakampis gretasienis";
+            this.rbRectangle.UseVisualStyleBackColor = true;
+            this.rbRectangle.CheckedChanged += new System.EventHandler(this.rbRectangle_CheckedChanged);
+            // 
             // rbPrism
             // 
             this.rbPrism.AutoSize = true;
@@ -318,18 +330,6 @@
             this.rbCube.Text = "Kubas";
             this.rbCube.UseVisualStyleBackColor = true;
             this.rbCube.CheckedChanged += new System.EventHandler(this.rbCube_CheckedChanged);
-            // 
-            // rbRectangle
-            // 
-            this.rbRectangle.AutoSize = true;
-            this.rbRectangle.Location = new System.Drawing.Point(18, 50);
-            this.rbRectangle.Name = "rbRectangle";
-            this.rbRectangle.Size = new System.Drawing.Size(141, 17);
-            this.rbRectangle.TabIndex = 6;
-            this.rbRectangle.TabStop = true;
-            this.rbRectangle.Text = "Stačiakampis gretasienis";
-            this.rbRectangle.UseVisualStyleBackColor = true;
-            this.rbRectangle.CheckedChanged += new System.EventHandler(this.rbRectangle_CheckedChanged);
             // 
             // Tūriai
             // 

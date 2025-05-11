@@ -73,6 +73,11 @@
             this.txtNum4 = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbChoose = new System.Windows.Forms.ToolStripButton();
+            this.cmb1 = new System.Windows.Forms.ComboBox();
+            this.cmb2 = new System.Windows.Forms.ComboBox();
+            this.cmb3 = new System.Windows.Forms.ComboBox();
+            this.cmb4 = new System.Windows.Forms.ComboBox();
+            this.cmb5 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -81,7 +86,7 @@
             // btnEquals
             // 
             this.btnEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquals.Location = new System.Drawing.Point(286, 203);
+            this.btnEquals.Location = new System.Drawing.Point(326, 209);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(75, 49);
             this.btnEquals.TabIndex = 17;
@@ -91,7 +96,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(286, 147);
+            this.btnClear.Location = new System.Drawing.Point(326, 153);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 15;
@@ -101,7 +106,7 @@
             // 
             // btnClearAll
             // 
-            this.btnClearAll.Location = new System.Drawing.Point(286, 174);
+            this.btnClearAll.Location = new System.Drawing.Point(326, 180);
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(75, 23);
             this.btnClearAll.TabIndex = 16;
@@ -155,7 +160,7 @@
             this.lblCalculator.Location = new System.Drawing.Point(12, 9);
             this.lblCalculator.MinimumSize = new System.Drawing.Size(454, 82);
             this.lblCalculator.Name = "lblCalculator";
-            this.lblCalculator.Size = new System.Drawing.Size(1066, 134);
+            this.lblCalculator.Size = new System.Drawing.Size(1048, 134);
             this.lblCalculator.TabIndex = 10;
             this.lblCalculator.Text = "0";
             this.lblCalculator.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -260,9 +265,9 @@
             this.groupBox1.Controls.Add(this.rdbN);
             this.groupBox1.Controls.Add(this.rdbEk);
             this.groupBox1.Controls.Add(this.rdbEp);
-            this.groupBox1.Location = new System.Drawing.Point(565, 147);
+            this.groupBox1.Location = new System.Drawing.Point(595, 147);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(513, 531);
+            this.groupBox1.Size = new System.Drawing.Size(465, 531);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ieškomas fizikinis dydis";
@@ -456,7 +461,7 @@
             this.groupBox2.Controls.Add(this.rb1);
             this.groupBox2.Controls.Add(this.rb2);
             this.groupBox2.Controls.Add(this.rb3);
-            this.groupBox2.Location = new System.Drawing.Point(386, 147);
+            this.groupBox2.Location = new System.Drawing.Point(409, 147);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(173, 300);
             this.groupBox2.TabIndex = 43;
@@ -587,7 +592,7 @@
             this.tsbChoose});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1110, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1092, 25);
             this.toolStrip1.TabIndex = 47;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -600,11 +605,68 @@
             this.tsbChoose.Text = "Atgal";
             this.tsbChoose.Click += new System.EventHandler(this.tsbChoose_Click);
             // 
+            // cmb1
+            // 
+            this.cmb1.FormattingEnabled = true;
+            this.cmb1.Items.AddRange(new object[] {
+            "aaaaa",
+            "b",
+            "c"});
+            this.cmb1.Location = new System.Drawing.Point(230, 166);
+            this.cmb1.Name = "cmb1";
+            this.cmb1.Size = new System.Drawing.Size(70, 21);
+            this.cmb1.TabIndex = 48;
+            this.cmb1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // cmb2
+            // 
+            this.cmb2.FormattingEnabled = true;
+            this.cmb2.Location = new System.Drawing.Point(230, 191);
+            this.cmb2.Name = "cmb2";
+            this.cmb2.Size = new System.Drawing.Size(70, 21);
+            this.cmb2.TabIndex = 49;
+            this.cmb2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // cmb3
+            // 
+            this.cmb3.FormattingEnabled = true;
+            this.cmb3.Location = new System.Drawing.Point(230, 217);
+            this.cmb3.Name = "cmb3";
+            this.cmb3.Size = new System.Drawing.Size(70, 21);
+            this.cmb3.TabIndex = 51;
+            this.cmb3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // cmb4
+            // 
+            this.cmb4.FormattingEnabled = true;
+            this.cmb4.Location = new System.Drawing.Point(230, 244);
+            this.cmb4.Name = "cmb4";
+            this.cmb4.Size = new System.Drawing.Size(70, 21);
+            this.cmb4.TabIndex = 50;
+            this.cmb4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // cmb5
+            // 
+            this.cmb5.FormattingEnabled = true;
+            this.cmb5.Items.AddRange(new object[] {
+            "aaaaa",
+            "b",
+            "c"});
+            this.cmb5.Location = new System.Drawing.Point(326, 264);
+            this.cmb5.Name = "cmb5";
+            this.cmb5.Size = new System.Drawing.Size(70, 21);
+            this.cmb5.TabIndex = 52;
+            // 
             // Fizikinis_skaiciuotuvas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 690);
+            this.ClientSize = new System.Drawing.Size(1092, 690);
+            this.Controls.Add(this.cmb5);
+            this.Controls.Add(this.cmb3);
+            this.Controls.Add(this.cmb4);
+            this.Controls.Add(this.cmb2);
+            this.Controls.Add(this.cmb1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.txtNum4);
             this.Controls.Add(this.lbl4);
@@ -681,5 +743,10 @@
         private System.Windows.Forms.RadioButton rdbEp;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbChoose;
+        private System.Windows.Forms.ComboBox cmb1;
+        private System.Windows.Forms.ComboBox cmb2;
+        private System.Windows.Forms.ComboBox cmb3;
+        private System.Windows.Forms.ComboBox cmb4;
+        private System.Windows.Forms.ComboBox cmb5;
     }
 }

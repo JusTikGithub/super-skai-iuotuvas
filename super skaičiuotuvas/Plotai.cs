@@ -29,9 +29,27 @@ namespace super_skaičiuotuvas
             {
                 lblCalculator.Text = (a * a).ToString();
             }
-            else if (rbTriangle.Checked)
+            else if (rbTriangle.Checked && x == 1)
             {
-                lblCalculator.Text = ((b * a) / 2).ToString();
+                lblCalculator.Text = (b * a / 2).ToString();
+            }
+            else if (rbTriangle.Checked && x == 2)
+            {
+                lblCalculator.Text = (b * a * Math.Sin(c) / 2).ToString();
+            }
+            else if (rbTriangle.Checked && x == 3)
+            {
+                lblCalculator.Text = (b * a).ToString();
+            }
+            else if (rbTriangle.Checked && x == 4)
+            {
+                lblCalculator.Text = (b * a * c / (4 * d)).ToString();
+            }
+            else if (rbTriangle.Checked && x == 5)
+            {
+                double z = (a + b + c) / 2;
+                double y = z * (z - a) * (z - b) * (z - c);
+                lblCalculator.Text = (Math.Sqrt(y)).ToString();
             }
             else if (rbLygiagretainis.Checked && x == 1)
             {
@@ -71,10 +89,6 @@ namespace super_skaičiuotuvas
             else if (rbCube.Checked)
             {
                 lblCalculator.Text = (6 * Math.Pow(a, 2)).ToString();
-            }
-            else if (rb3Pyramid.Checked)
-            {
-                lblCalculator.Text = (0.5 * (a * b + 1.5 * (a + c + d) * E)).ToString(); //Padaryk pasirinkimus kai lygiašonė, lygiakraštė ar betkokia
             }
             else if (rbRectPrism.Checked)
             {
@@ -127,9 +141,11 @@ namespace super_skaičiuotuvas
         {
             if (rbTriangle.Checked)
             {
-                lbl1.Text = "Aukštis";
-                lbl2.Text = "Pagrindo ilgis";
-                b();
+                btn1.Text = "S = 0,5 * a * h";
+                btn2.Text = "S = 0,5 * a * b * sin c";
+                btn3.Text = "S = r * p";
+                btn4.Text = "S = a * b * c / (4 * R)";
+                btn5.Text = "S = Herono formulė";
             }
         }
 
@@ -145,39 +161,82 @@ namespace super_skaičiuotuvas
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            x = 1;
             if (rbLygiagretainis.Checked)
-            {
-                x = 1;
+            {  
                 lbl1.Text = "aukštinė";
                 lbl2.Text = "pagrindo ilgis";
+                b();
+            }
+            if (rbTriangle.Checked)
+            {
+                lbl1.Text = "Aukštinė";
+                lbl2.Text = "Pagrindo ilgis";
                 b();
             }
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            x = 2;
             if (rbLygiagretainis.Checked)
-            {
-                x = 2;
+            { 
                 lbl1.Text = "1 ižambinės ilgis";
                 lbl2.Text = "2 ižambinės ilgis";
                 lbl3.Text = "Kampas tarp įžambinių";
+                c();
+            }
+            if (rbTriangle.Checked)
+            {
+                lbl1.Text = "Vienos kraštinės ilgis";
+                lbl2.Text = "Kitos kraštinės ilgis";
+                lbl3.Text = "Kampas tarp kraštinių";
                 c();
             }
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            x = 3;
             if (rbLygiagretainis.Checked)
             {
-                x = 3;
                 lbl1.Text = "pagrindo ilgis";
                 lbl2.Text = "šoninės kraštinės ilgis";
                 lbl3.Text = "kampo dydis tarp a ir b kraštinių";
                 c();
             }
+            if (rbTriangle.Checked)
+            {
+                lbl1.Text = "Spindulio ilgis";
+                lbl2.Text = "Perimetro ilgis";
+                b();
+            }
         }
 
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            x = 4;
+            if (rbTriangle.Checked)
+            {
+                lbl1.Text = "Pirmos kraštinės ilgis";
+                lbl2.Text = "Antros kraštinės ilgis";
+                lbl3.Text = "Trečios kraštinės ilgis";
+                lbl4.Text = "Spindulio ilgis";
+                d();
+            }
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            x = 5;
+            if (rbTriangle.Checked)
+            {
+                lbl1.Text = "Pirmos kraštinės ilgis";
+                lbl2.Text = "Antros kraštinės ilgis";
+                lbl3.Text = "Trečios kraštinės ilgis";
+                c();
+            }
+        }
         private void tsbChoose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -329,20 +388,6 @@ namespace super_skaičiuotuvas
                 lbl1.Text = "Kraštinės ilgis";
             }
         }
-
-        private void rb3Pyramid_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb3Pyramid.Checked)
-            {
-                E();
-                lbl1.Text = "pagrindo pirmos kraštinės ilgis";
-                lbl2.Text = "aukštinės, nubrėžtos į tą kraštinę ilgis";
-                lbl3.Text = "pagrindo antros kraštinės ilgis";
-                lbl4.Text = "pagrindo trečios kraštinės ilgis";
-                lbl5.Text = "piramidės aukštis";
-            }
-        }
-
         private void rbRectPrism_CheckedChanged(object sender, EventArgs e)
         {
             if (rbRectPrism.Checked)
@@ -384,5 +429,7 @@ namespace super_skaičiuotuvas
                 lbl3.Text = "aukštis";
             }
         }
+
+
     }
 }
