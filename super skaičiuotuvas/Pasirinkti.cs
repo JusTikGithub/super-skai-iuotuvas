@@ -47,7 +47,14 @@ namespace super_skaičiuotuvas
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Trigonometrija frm6 = new Trigonometrija();
+            frm6.Show();
+            this.Close();
         }
     }
 }

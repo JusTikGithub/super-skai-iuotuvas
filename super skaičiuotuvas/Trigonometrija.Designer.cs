@@ -31,8 +31,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbCos = new System.Windows.Forms.RadioButton();
             this.rbPrism = new System.Windows.Forms.RadioButton();
-            this.Costeor = new System.Windows.Forms.RadioButton();
-            this.Sintheor = new System.Windows.Forms.RadioButton();
+            this.rbAngle = new System.Windows.Forms.RadioButton();
+            this.rbLength = new System.Windows.Forms.RadioButton();
             this.rbTan = new System.Windows.Forms.RadioButton();
             this.rbPiramid = new System.Windows.Forms.RadioButton();
             this.rbSin = new System.Windows.Forms.RadioButton();
@@ -51,6 +51,7 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,8 +60,8 @@
             // 
             this.groupBox1.Controls.Add(this.rbCos);
             this.groupBox1.Controls.Add(this.rbPrism);
-            this.groupBox1.Controls.Add(this.Costeor);
-            this.groupBox1.Controls.Add(this.Sintheor);
+            this.groupBox1.Controls.Add(this.rbAngle);
+            this.groupBox1.Controls.Add(this.rbLength);
             this.groupBox1.Controls.Add(this.rbTan);
             this.groupBox1.Controls.Add(this.rbPiramid);
             this.groupBox1.Controls.Add(this.rbSin);
@@ -94,27 +95,27 @@
             this.rbPrism.UseVisualStyleBackColor = true;
             this.rbPrism.Visible = false;
             // 
-            // Costeor
+            // rbAngle
             // 
-            this.Costeor.AutoSize = true;
-            this.Costeor.Location = new System.Drawing.Point(18, 119);
-            this.Costeor.Name = "Costeor";
-            this.Costeor.Size = new System.Drawing.Size(109, 17);
-            this.Costeor.TabIndex = 4;
-            this.Costeor.TabStop = true;
-            this.Costeor.Text = "Kosinusų teorema";
-            this.Costeor.UseVisualStyleBackColor = true;
+            this.rbAngle.AutoSize = true;
+            this.rbAngle.Location = new System.Drawing.Point(18, 119);
+            this.rbAngle.Name = "rbAngle";
+            this.rbAngle.Size = new System.Drawing.Size(100, 17);
+            this.rbAngle.TabIndex = 4;
+            this.rbAngle.TabStop = true;
+            this.rbAngle.Text = "Kampo didumas";
+            this.rbAngle.UseVisualStyleBackColor = true;
             // 
-            // Sintheor
+            // rbLength
             // 
-            this.Sintheor.AutoSize = true;
-            this.Sintheor.Location = new System.Drawing.Point(18, 96);
-            this.Sintheor.Name = "Sintheor";
-            this.Sintheor.Size = new System.Drawing.Size(98, 17);
-            this.Sintheor.TabIndex = 3;
-            this.Sintheor.TabStop = true;
-            this.Sintheor.Text = "Sinusų teorema";
-            this.Sintheor.UseVisualStyleBackColor = true;
+            this.rbLength.AutoSize = true;
+            this.rbLength.Location = new System.Drawing.Point(18, 96);
+            this.rbLength.Name = "rbLength";
+            this.rbLength.Size = new System.Drawing.Size(88, 17);
+            this.rbLength.TabIndex = 3;
+            this.rbLength.TabStop = true;
+            this.rbLength.Text = "Kraštinės ilgis";
+            this.rbLength.UseVisualStyleBackColor = true;
             // 
             // rbTan
             // 
@@ -149,6 +150,7 @@
             this.rbSin.TabStop = true;
             this.rbSin.Text = "Sin";
             this.rbSin.UseVisualStyleBackColor = true;
+            this.rbSin.CheckedChanged += new System.EventHandler(this.rbSin_CheckedChanged);
             // 
             // btnEquals
             // 
@@ -159,6 +161,7 @@
             this.btnEquals.TabIndex = 81;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = true;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btnClear
             // 
@@ -268,36 +271,50 @@
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(270, 308);
+            this.btn3.Location = new System.Drawing.Point(235, 308);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(90, 60);
             this.btn3.TabIndex = 95;
             this.btn3.Text = "button3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(174, 308);
+            this.btn2.Location = new System.Drawing.Point(139, 308);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(90, 60);
             this.btn2.TabIndex = 94;
             this.btn2.Text = "button2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(78, 308);
+            this.btn1.Location = new System.Drawing.Point(43, 308);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(90, 60);
             this.btn1.TabIndex = 93;
             this.btn1.Text = "button1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            // 
+            // btn4
+            // 
+            this.btn4.Location = new System.Drawing.Point(331, 308);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(90, 60);
+            this.btn4.TabIndex = 96;
+            this.btn4.Text = "button4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // Trigonometrija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 450);
+            this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
@@ -329,8 +346,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbCos;
         private System.Windows.Forms.RadioButton rbPrism;
-        private System.Windows.Forms.RadioButton Costeor;
-        private System.Windows.Forms.RadioButton Sintheor;
+        private System.Windows.Forms.RadioButton rbAngle;
+        private System.Windows.Forms.RadioButton rbLength;
         private System.Windows.Forms.RadioButton rbTan;
         private System.Windows.Forms.RadioButton rbPiramid;
         private System.Windows.Forms.RadioButton rbSin;
@@ -349,5 +366,6 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn4;
     }
 }

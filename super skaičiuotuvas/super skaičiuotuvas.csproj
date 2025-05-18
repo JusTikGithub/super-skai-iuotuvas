@@ -116,6 +116,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Trigonometrija.resx">
+      <DependentUpon>Trigonometrija.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tūriai.resx">
       <DependentUpon>Tūriai.cs</DependentUpon>
     </EmbeddedResource>

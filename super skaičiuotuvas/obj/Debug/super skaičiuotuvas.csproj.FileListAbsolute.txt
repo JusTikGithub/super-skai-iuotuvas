@@ -60,3 +60,4 @@ C:\Users\jus7a\OneDrive\Documents\Unity folder\super-skai-iuotuvas\super skaiči
 C:\Users\jus7a\OneDrive\Documents\Unity folder\super-skai-iuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.csproj.CoreCompileInputs.cache
 C:\Users\jus7a\OneDrive\Documents\Unity folder\super-skai-iuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.exe
 C:\Users\jus7a\OneDrive\Documents\Unity folder\super-skai-iuotuvas\super skaičiuotuvas\obj\Debug\super skaičiuotuvas.pdb
+C:\Users\jus7a\OneDrive\Documents\Unity folder\super-skai-iuotuvas\super skaičiuotuvas\obj\Debug\super_skaičiuotuvas.Trigonometrija.resources
