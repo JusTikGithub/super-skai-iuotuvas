@@ -82,6 +82,7 @@
             this.rbCos.TabStop = true;
             this.rbCos.Text = "Cos";
             this.rbCos.UseVisualStyleBackColor = true;
+            this.rbCos.CheckedChanged += new System.EventHandler(this.rbCos_CheckedChanged);
             // 
             // rbPrism
             // 
@@ -116,6 +117,7 @@
             this.rbLength.TabStop = true;
             this.rbLength.Text = "Kraštinės ilgis";
             this.rbLength.UseVisualStyleBackColor = true;
+            this.rbLength.CheckedChanged += new System.EventHandler(this.rbLength_CheckedChanged);
             // 
             // rbTan
             // 
@@ -127,6 +129,7 @@
             this.rbTan.TabStop = true;
             this.rbTan.Text = "Tan";
             this.rbTan.UseVisualStyleBackColor = true;
+            this.rbTan.CheckedChanged += new System.EventHandler(this.rbTan_CheckedChanged);
             // 
             // rbPiramid
             // 
