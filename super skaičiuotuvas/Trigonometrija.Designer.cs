@@ -52,6 +52,7 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -106,6 +107,7 @@
             this.rbAngle.TabStop = true;
             this.rbAngle.Text = "Kampo didumas";
             this.rbAngle.UseVisualStyleBackColor = true;
+            this.rbAngle.CheckedChanged += new System.EventHandler(this.rbAngle_CheckedChanged);
             // 
             // rbLength
             // 
@@ -174,6 +176,7 @@
             this.btnClear.TabIndex = 79;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClearAll
             // 
@@ -183,6 +186,7 @@
             this.btnClearAll.TabIndex = 80;
             this.btnClearAll.Text = "Clear all";
             this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // lbl2
             // 
@@ -312,11 +316,22 @@
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
+            // btn5
+            // 
+            this.btn5.Location = new System.Drawing.Point(186, 374);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(90, 60);
+            this.btn5.TabIndex = 97;
+            this.btn5.Text = "button5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            // 
             // Trigonometrija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 450);
+            this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -370,5 +385,6 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn5;
     }
 }
